@@ -1,0 +1,104 @@
+.login {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(93, 85, 100, 0.726),
+      rgba(35, 29, 39, 0.678)
+    ),
+    url("../../assets/loginleft.jpeg") center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(58, 11, 96, 0.61)),
+        url("../../assets/loginleft.jpeg") center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      ul {
+        color: #dcdbde;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        font-weight: 900;
+        color: rebeccapurple;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        scale: 1.02;
+        box-shadow: 2px 3px 5px rebeccapurple;
+      }
+    }
+
+    .right {
+      flex: 1;
+      color: rgb(112, 112, 112);
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: none;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 10px 15px;
+          background-color: rgb(241, 241, 241);
+          outline-style: none;
+        }
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        font-weight: 900;
+        color: white;
+        background-color: rgb(155, 66, 245);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(166, 91, 241);
+      }
+    }
+  }
+}
