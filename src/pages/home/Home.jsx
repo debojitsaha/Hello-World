@@ -3,7 +3,7 @@ import "./home.scss"
 
 const Home = () => {
   return (
-    <div className='home' style={{flex:6}}>
+    <div className='home'>
       <div>home</div>
       <div>home</div>
       <div>home</div>
