@@ -1,0 +1,102 @@
+.leftBar {
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  hr {
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: lightgray;
+  }
+
+  .container {
+    padding: 20px;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .items {
+        display: flex;
+        align-items: center;
+        gap: 10px;        
+
+        img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .shortcuts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        font-size: 14px;
+        color: gray;
+      }
+
+      .items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          font-size: 14px;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .others {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        font-size: 14px;
+        color: gray;
+      }
+
+      .items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          font-size: 14px;
+          color: black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

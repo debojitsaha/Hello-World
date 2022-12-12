@@ -7,6 +7,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import defaultprofile from '../../assets/defaultprofile.png'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
         <NotificationsOutlinedIcon />
         <div className="user">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png"
+            src= {defaultprofile}
             alt=""
           />
           <span>John Doe</span>
