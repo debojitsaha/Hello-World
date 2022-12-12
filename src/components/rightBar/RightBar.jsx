@@ -9,8 +9,8 @@ const RightBar = () => {
         <div className="item">
           <span>Suggestions for You</span>
           {suggestions.map((data, i) => (
-            <div className="user">
-              <div className="userInfo" key={i}>
+            <div className="user" key={i}>
+              <div className="userInfo">
                 <img src={data.pic} alt="" />
                 <span>{data.name}</span>
               </div>
@@ -25,8 +25,8 @@ const RightBar = () => {
         <div className="item">
           <span>Latest Activities</span>
           {latestActivities.map((data, i) => (
-            <div className="user">
-              <div className="userInfo" key={i}>
+            <div className="user" key={i}>
+              <div className="userInfo">
                 <img src={data.pic} alt="" />
                 <p>
                   <span>{data.name}</span> {data.activity}
@@ -40,8 +40,8 @@ const RightBar = () => {
         <div className="item">
           <span>Online Friends</span>
           {onlineFriends.map((data, i) => (
-            <div className="user">
-              <div className="userInfo" key={i}>
+            <div className="user" key={i}>
+              <div className="userInfo">
                 <img src={data.pic} alt="" />            
                 <div className="online" />
                 <span>{data.name}</span>

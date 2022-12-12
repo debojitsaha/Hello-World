@@ -1,9 +1,14 @@
+@import '../../style.scss';
+
 .leftBar {
+  @include themify($themes) {
   flex: 2;
   position: sticky;
   top: 70px;
   height: calc(100vh - 70px);
   overflow: scroll;
+  color: themed('textColor');
+  background: themed('bg');
 
   &::-webkit-scrollbar{
     display: none;
@@ -13,7 +18,7 @@
     margin: 20px 0px;
     border: none;
     height: 0.5px;
-    background-color: lightgray;
+    background-color: themed('border');
   }
 
   .container {
@@ -39,6 +44,7 @@
           font-size: 14px;
           font-weight: 600;
           cursor: pointer;
+          color: themed('textColor');
         }
       }
     }
@@ -50,7 +56,7 @@
 
       span {
         font-size: 14px;
-        color: gray;
+        color: themed('textColorSoft');
       }
 
       .items {
@@ -65,7 +71,7 @@
 
         span {
           font-size: 14px;
-          color: black;
+          color: themed('textColor');
           font-weight: 600;
         }
       }
@@ -78,7 +84,7 @@
 
       span {
         font-size: 14px;
-        color: gray;
+        color: themed('textColorSoft');
       }
 
       .items {
@@ -93,10 +99,11 @@
 
         span {
           font-size: 14px;
-          color: black;
+          color: themed('textColor');
           font-weight: 600;
         }
       }
     }
   }
+}
 }
