@@ -37,6 +37,14 @@
           width: 500px;
           outline-style: none;
           background: transparent;
+
+          @include mobile {
+            display: none;
+          }
+
+          @include tablet {
+            width: 250px;
+          }
         }
       }
     }
@@ -46,10 +54,18 @@
       align-items: center;
       gap: 20px;
 
+      @include mobile {
+        display: none;
+      }
+
       .user {
         display: flex;
         align-items: center;
         gap: 5px;
+
+        @include tablet {
+          display: none;
+        }
 
         img {
           width: 30px;

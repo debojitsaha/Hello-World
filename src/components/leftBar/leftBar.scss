@@ -10,6 +10,10 @@
   color: themed('textColor');
   background: themed('bg');
 
+  @include mobile{
+    display: none;
+  }
+
   &::-webkit-scrollbar{
     display: none;
   }
