@@ -8,10 +8,17 @@
 
     @include mobile {
       padding: 10px;
+      width: calc(100vw - 20px);
+    }
+
+    @include mobilelarge {
+      padding: 10px;
+      width: calc(100vw - 20px);
     }
 
     @include tablet {
       padding: 20px;
+      width: calc(100vw - 240px);
     }
   }
 }

@@ -3,10 +3,7 @@ import "./navbar.scss";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
@@ -31,7 +28,9 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>hello-world</span>
         </Link>
+        <div className="leftinner">
         <HomeOutlinedIcon style={{ cursor: "pointer" }} />
+        </div>
         {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} style={{ cursor: "pointer" }} />
         ) : (
@@ -40,19 +39,18 @@ const Navbar = () => {
             style={{ cursor: "pointer" }}
           />
         )}
-        <GridViewOutlinedIcon style={{ cursor: "pointer" }} />
         <div className="search">
           <SearchOutlinedIcon />
           <input type="text" name="" id="" placeholder="Search.." />
         </div>
       </div>
+      <div className="rightouter">
       <div className="right">
-        <AccountCircleOutlinedIcon style={{ cursor: "pointer" }} />
-        <EmailOutlinedIcon style={{ cursor: "pointer" }} />
         <NotificationsOutlinedIcon style={{ cursor: "pointer" }} />
         <div className="user">
           <img src={currentUser.profilePic} alt="" />
           <span>{currentUser.name}</span>
+        </div>
         </div>
         <div className="logout" onClick={logOutHandler}>
           <LogoutIcon style={{ cursor: "pointer" }} />

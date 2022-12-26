@@ -1,5 +1,7 @@
+@import "../../style.scss";
+
 .register {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
       to right,
       rgba(59, 55, 59, 0.911),
@@ -18,7 +20,21 @@
     background-color: white;
     border-radius: 10px;
     min-height: 600px;
-    overflow: hidden;
+    overflow: hidden;  
+
+    @include mobile {
+      flex-direction: column;
+      width: 90%;
+    }
+    
+    @include mobilelarge {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    @include tablet {      
+      width: 90%;
+    }
 
     .left {
       flex: 1;
@@ -28,6 +44,18 @@
       padding: 50px;
       gap: 20px;
       justify-content: center;
+
+      @include mobile {
+        padding: 15px;
+      }
+      
+      @include mobilelarge {
+        padding: 20px;
+      }
+
+      @include tablet {
+        padding: 30px;
+      }
 
       h1 {
         font-size: 40px;
@@ -73,6 +101,18 @@
       flex-direction: column;
       padding: 50px;
       gap: 20px;
+
+      @include mobile {
+        padding: 15px;
+      }
+      
+      @include mobilelarge {
+        padding: 20px;
+      }
+
+      @include tablet {
+        padding: 30px;
+      }
 
       h1 {
         font-size: 50px;
